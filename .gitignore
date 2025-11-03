@@ -1,0 +1,82 @@
+# ===============================
+# 💻 Gitignore untuk proyek PHP di Laragon
+# ===============================
+
+# Folder sistem lokal & konfigurasi IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Folder temporary & cache
+.cache/
+temp/
+tmp/
+logs/
+*.log
+
+# Uploads / assets dinamis
+uploads/
+backup/
+storage/
+*.zip
+*.rar
+
+# File environment / konfigurasi lokal
+.env
+.env.local
+.env.example
+
+# Folder dependency composer / npm
+/vendor/
+node_modules/
+
+# File database lokal
+*.sqlite
+*.db
+
+# File sistem Windows & macOS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+Icon?
+__MACOSX/
+
+# Folder build atau export
+/build/
+/dist/
+public/build/
+public/storage/
+
+# File hasil kompresi
+*.gz
+*.tar
+*.7z
+*.bak
+
+# Cache PHP
+*.cache
+*.tmp
+*.swp
+*.bak
+
+# ===============================
+# ✅ Tambahan untuk keamanan
+# ===============================
+
+# Jangan upload key/sertifikat
+*.pem
+*.key
+*.crt
+*.cer
+
+# Ignore laragon-specific settings
+laragon.ini
+laragon.log
+
+# Jika ada proyek Node untuk frontend
+package-lock.json
+
+# Jika pakai Composer (PHP)
+composer.lock
